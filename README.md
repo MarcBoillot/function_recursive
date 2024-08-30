@@ -1,6 +1,11 @@
 # function_recursive
 
 
+
+ const quantityTab = selectedRows.map((line) => parseFloat(line.Quantity))
+                        const QtyEntered = input.getValue()
+                        const LineNum = selectedRows.map((line)=>line.LineNum)
+                        let dataToPatch = {DocumentLines: []}
 function calculateRemainingQuantity(quantityTab, qtyEntered, i = 0) {
                             if (i >= quantityTab.length || qtyEntered <=0) {
                                 console.log("Quantité restante :", qtyEntered)
